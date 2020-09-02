@@ -1,0 +1,272 @@
+#page-dashboard {
+    width: 100%;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+#page-dashboard header {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#page-home .content header .column{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+} 
+
+#page-dashboard header a {
+    color: var(--title-color);
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+#page-dashboard header a svg {
+    margin-right: 16px;
+    color: var(--primary-color);
+}
+
+#page-dashboard  form {
+    margin: 30px auto;
+    padding: 30px;
+    background: #FFF;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+#page-dashboard form .search {
+    margin-bottom: 16px;
+}
+
+#page-dashboard form fieldset {
+    margin-top: 0px;
+    min-inline-size: auto;
+    border: 0;
+}
+
+#page-dashboard form .field-group {
+    flex: 1;
+    display: flex;
+}
+
+#page-dashboard form .field {
+    flex: 1;
+    display: flex;
+    flex-direction: column;    
+}
+
+#page-dashboard form .field select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    flex: 1;
+    background: #F0F0F5;
+    border-radius: 8px;
+    border: 0;
+    padding: 16px 24px;
+    font-size: 16px;
+    color: #6C6C80;
+    cursor: pointer;
+}
+  
+#page-dashboard form .field input::placeholder {
+    color: #A0A0B2;
+}
+   
+#page-dashboard form .field :disabled {
+    cursor: not-allowed;
+}
+
+#page-dashboard form .field-group .field + .field {
+    margin-left: 24px;
+}
+
+#page-dashboard form .items-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    list-style: none;
+  }
+  
+  #page-dashboard form .items-grid li {
+    background: #f5f5f5;
+    border: 2px solid #f5f5f5;
+    height: 90px;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+   
+#page-dashboard form .items-grid li.selected {
+    background: #E1FAEC;
+    border: 2px solid #34CB79;
+}
+
+#page-dashboard form button {
+    display: flex;
+    width: 280px;
+    height: 56px;
+    background: var(--primary-color);
+    border-radius: 8px;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 16px;
+    border: 0;
+    align-self: center;
+    margin-top: 20px;
+    transition: background-color 0.2s;
+    cursor: pointer;
+}
+  
+#page-dashboard form button:hover {
+    background: #2FB86E;
+}
+
+#page-dashboard form button:focus {
+    outline: none;
+    border: none;
+}
+
+#page-dashboard form button span {
+    display: block;
+    background: rgba(0, 0, 0, 0.08);
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s;
+}
+
+#page-dashboard form button span svg {
+    color: #FFF;
+    width: 20px;
+    height: 20px;
+}
+
+#page-dashboard form button strong {
+    flex: 1;
+    text-align: center;
+    align-self: center;
+    color: #FFF;
+}
+ 
+#page-dashboard .content ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    margin-top: 32px;
+}
+
+#page-dashboard .content ul li {
+    display: flex;
+    flex-direction: column;
+}
+
+#page-dashboard .content ul li img {
+    max-width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+#page-dashboard .content ul li div {
+    flex: 1;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #eee;
+    padding: 15px 20px;
+    text-align: left;
+    border-radius: 0 0 5px 5px;
+}
+
+#page-dashboard .content ul li div strong {
+    font-size: 16px;
+    color: #333;
+}
+
+#page-dashboard .content ul li div p {
+    font-size: 14px;
+    line-height: 20px;
+    color: #999;
+    margin-top: 5px;
+}
+
+#page-dashboard .create-point {
+    display: flex;
+    justify-content: center;
+}
+
+#page-dashboard .create-point a {
+    display: flex;
+    width: 280px;
+    height: 56px;
+    background: var(--primary-color);
+    border-radius: 8px;
+    text-decoration: none;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+#page-dashboard .create-point a span {
+    display: block;
+    background: rgba(0, 0, 0, 0.08);
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s;
+}
+
+#page-dashboard .create-point a span svg {
+    color: #FFF;
+    width: 20px;
+    height: 20px;
+}
+
+#page-dashboard .create-point a strong {
+    flex: 1;
+    text-align: center;
+    color: #FFF;
+}
+
+#page-dashboard .create-point a:hover {
+    background: #2FB86E;
+}
+  
+@media(max-width: 900px) {
+    #page-dashboard .content {
+        align-items: center;
+        text-align: center;
+    }
+
+    #page-dashboard .content header {
+        margin: 48px auto 0;
+    }
+
+    #page-dashboard .content main {
+        align-items: center;
+    }
+
+    #page-dashboard .content main h1 {
+        font-size: 42px;
+    }
+
+    #page-dashboard .content main p {
+        font-size: 24px;
+    }
+}
+  
